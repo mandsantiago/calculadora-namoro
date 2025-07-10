@@ -1,5 +1,6 @@
-import { ExternalLink, Gift } from 'lucide-react'
+import { Flame } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card.jsx'
+import bannerImage from '../assets/COMPREAQUI.png'
 
 const BannerAfiliado = () => {
   return (
@@ -7,34 +8,35 @@ const BannerAfiliado = () => {
       <CardContent className="p-6">
         <div className="text-center">
           <div className="flex items-center justify-center space-x-2 mb-3">
-            <Gift className="text-orange-600" size={28} />
+            <Flame className="text-orange-600" size={28} />
             <h3 className="text-2xl font-bold text-orange-800">
-              Espaço Publicitário
+              Para sair da rotina
             </h3>
-            <Gift className="text-orange-600" size={28} />
+            <Flame className="text-orange-600" size={28} />
           </div>
-          <p className="text-orange-700 mb-4 text-lg">
-            Aqui você pode inserir seu banner de afiliado ou publicidade
-          </p>
-          <div className="bg-white rounded-lg p-8 border-2 border-dashed border-orange-300 min-h-[200px] flex items-center justify-center">
-            <div className="text-center text-orange-600">
-              <ExternalLink size={48} className="mx-auto mb-4 opacity-50" />
-              <p className="text-lg font-medium">
-                Banner de Afiliado
-              </p>
-              <p className="text-sm opacity-75 mt-2">
-                Dimensões recomendadas: 728x200px ou 300x250px
-              </p>
-            </div>
+          
+          <div className="bg-white rounded-lg p-4 border-2 border-orange-300 hover:border-orange-400 transition-colors duration-300">
+            <a 
+              href="https://s.shopee.com.br/3VZAPHATjV" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block hover:opacity-90 transition-opacity duration-300"
+            >
+              <img 
+                src={bannerImage} 
+                alt="Compre Aqui - Para sair da rotina" 
+                className="w-full h-auto max-w-md mx-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              />
+            </a>
           </div>
+          
           <p className="text-sm text-orange-600 mt-3 italic">
-            * Este espaço está disponível para parcerias e publicidade
+            * Clique na imagem para conhecer produtos especiais
           </p>
         </div>
       </CardContent>
     </Card>
-  )
+   )
 }
 
 export default BannerAfiliado
-
