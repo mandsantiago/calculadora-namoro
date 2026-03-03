@@ -49,18 +49,12 @@ const passos = [
   },
   {
     numero: 2,
-    icon: <Search size={32} className="text-purple-500" />,
-    titulo: 'Escolha o que calcular',
-    descricao: 'Selecione se quer saber o tempo de namoro, o tempo de casamento ou a boda correspondente ao aniversário.',
-  },
-  {
-    numero: 3,
     icon: <Sparkles size={32} className="text-orange-400" />,
     titulo: 'Veja o resultado',
     descricao: 'A calculadora mostra o total em anos, meses e dias — além de revelar qual boda ou marco especial está chegando.',
   },
   {
-    numero: 4,
+    numero: 3,
     icon: <Share2 size={32} className="text-pink-400" />,
     titulo: 'Compartilhe ou comemore',
     descricao: 'Copie o resultado, compartilhe com seu amor ou use as nossas sugestões de comemoração para planejar algo especial!',
@@ -189,28 +183,33 @@ const marcos = [
     label: '1 Mês',
     titulo: 'O primeiro mês — a euforia ainda está no ar',
     descricao: 'É cedo, mas é lindo! Um café da manhã surpresa, uma mensagem especial ao acordar ou uma foto emoldurada do primeiro encontro já fazem a memória ficar marcada para sempre.',
-    tags: ['☕ Café da manhã surpresa', '💌 Carta escrita à mão', '📷 Foto emoldurada', '🎵 Playlist personalizada'],
+    tags: ['☕ Café da manhã surpresa', '💌 Carta escrita à mão', '🎵 Playlist personalizada'],
+    tagLinks: [{ texto: '📷 Foto emoldurada', url: 'https://meli.la/13W6rxe' }],
   },
   {
     emoji: '🌹',
     label: '6 Meses',
     titulo: 'Meio ano — vocês se conhecem de verdade agora',
     descricao: 'Seis meses é um marco incrível. Vocês já passaram por momentos juntos e construíram uma rotina. Hora de celebrar o que viveram e antecipar o que ainda vem.',
-    tags: ['🍽️ Jantar no restaurante favorito', '📔 Diário compartilhado', '🎁 Caixa de memórias dos 6 meses', '🌅 Passeio ao pôr do sol'],
+    tagLinks: [{ texto: '🎁 Caixa de memórias dos 6 meses', url: 'https://meli.la/2uH1wTc' }],
+    tags: ['🍽️ Jantar no restaurante favorito', '📔 Diário compartilhado', '🌅 Passeio ao pôr do sol'],
   },
   {
     emoji: '🎉',
     label: '1 Ano',
     titulo: 'Primeiro aniversário — a grande celebração',
-    descricao: 'Um ano juntos merece festa! Volte ao lugar do primeiro encontro, surpreenda com uma experiência inédita ou presenteie com algo que vai durar muitos anos — assim como o amor de vocês.',
-    tags: ['✈️ Viagem surpresa', '📸 Álbum de fotos do ano', '💍 Joia com a data gravada', '🥂 Jantar especial com champanhe'],
+    descricao: 'Um ano juntos merece festa! Volte ao lugar do primeiro encontro, surpreenda com uma experiência inédita, presenteie com um perfume especial ou presenteie com algo que vai durar muitos anos — assim como o amor de vocês.',
+    tagLinks: [{ texto: '📸 Álbum de fotos do ano', url: 'https://meli.la/1eWRMhy' }],
+    tags: ['✈️ Viagem surpresa', '💍 Joia com a data gravada', '🥂 Jantar especial com champanhe'],
+    linkPerfume: 'https://meuperfumeideal.com.br/perfume/',
   },
   {
     emoji: '💙',
     label: '2–4 Anos',
     titulo: 'A fase da cumplicidade profunda',
     descricao: 'Os presentes agora podem ser mais significativos e ligados a projetos futuros — uma viagem dos sonhos, um curso que sempre quiseram fazer juntos ou um presente que simboliza o próximo passo da relação.',
-    tags: ['⛺ Camping ou ecoturismo', '🎨 Curso juntos (culinária, dança)', '🌍 Viagem internacional', '🖼️ Quadro de arte personalizado'],
+    tags: ['⛺ Camping ou ecoturismo', '🎨 Curso juntos (culinária, dança)', '🌍 Viagem internacional'],
+    tagLinks: [{ texto: '🖼️ Quadro de arte personalizado', url: 'https://meli.la/2vuVnSW' }],
   },
   {
     emoji: '🪵',
@@ -254,10 +253,30 @@ const SecaoIdeias = () => (
             </div>
             <div>
               <h3 className="font-semibold text-purple-800 mb-1">{m.titulo}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed mb-3">{m.descricao}</p>
+              <p className="text-gray-500 text-sm leading-relaxed mb-3">
+                {m.descricao}
+                {m.linkPerfume && (
+                  <> Que tal presentear com um{' '}
+                    <a href={m.linkPerfume} target="_blank" rel="noopener noreferrer" className="text-purple-600 underline hover:text-pink-500 font-semibold">
+                      perfume especial
+                    </a>?
+                  </>
+                )}
+              </p>
               <div className="flex flex-wrap gap-2">
-                {m.tags.map((t, j) => (
-                  <span key={j} className="bg-pink-50 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full border border-pink-100">
+                {(m.tagLinks || []).map((tl, j) => (
+                  <a
+                    key={`link-${j}`}
+                    href={tl.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full border border-purple-200 hover:bg-purple-200 transition-colors"
+                  >
+                    {tl.texto}
+                  </a>
+                ))}
+                {(m.tags || []).map((t, j) => (
+                  <span key={`tag-${j}`} className="bg-pink-50 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full border border-pink-100">
                     {t}
                   </span>
                 ))}
