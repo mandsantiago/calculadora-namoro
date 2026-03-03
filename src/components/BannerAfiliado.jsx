@@ -10,21 +10,21 @@ const BannerAfiliado = () => {
           <div className="flex items-center justify-center space-x-2 mb-3">
             <Flame className="text-orange-600" size={28} />
             <h3 className="text-2xl font-bold text-orange-800">
-              Para sair da rotina
+              Para presentear seu amor
             </h3>
             <Flame className="text-orange-600" size={28} />
           </div>
           
           <div className="bg-white rounded-lg p-4 border-2 border-orange-300 hover:border-orange-400 transition-colors duration-300">
             <a 
-              href="https://s.shopee.com.br/3VZAPHATjV" 
+              href="https://meli.la/1GQTsD3" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block hover:opacity-90 transition-opacity duration-300"
             >
               <img 
                 src={bannerImage} 
-                alt="Compre Aqui - Para sair da rotina" 
+                alt="Compre Aqui - Presente de namoro" 
                 className="w-full h-auto max-w-md mx-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               />
             </a>
