@@ -4,8 +4,7 @@ import BannerAfiliado from './components/BannerAfiliado.jsx'
 import ConteudoExpandido from './components/ConteudoExpandido.jsx'
 import ConteudoSEO from './components/ConteudoSEO.jsx'
 import Footer from './components/Footer.jsx'
-import { ExternalLink, Heart } from 'lucide-react'
-import { Card, CardContent } from '@/components/ui/card.jsx'
+import bannerFlores from './assets/bannerflores.webp'
 import './App.css'
 
 function App() {
@@ -24,39 +23,20 @@ function App() {
           <CalculadoraNamoro />
         </section>
 
-        {/* Destaque Numerologia do Casal - ABAIXO da calculadora */}
-        <section className="max-w-4xl mx-auto px-6 mb-8">
-          <Card className="bg-gradient-to-r from-purple-100 to-pink-100 border-2 border-purple-300 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <CardContent className="p-6">
-              <div className="text-center">
-                <div className="flex items-center justify-center space-x-2 mb-4">
-                  <Heart className="text-purple-600 animate-pulse" size={28} />
-                  <h3 className="text-2xl font-bold text-purple-800">
-                    Descubra Mais Sobre Vocês!
-                  </h3>
-                  <Heart className="text-purple-600 animate-pulse" size={28} />
-                </div>
-
-                <p className="text-purple-700 mb-6 text-lg">
-                  Confira tudo sobre a numerologia do casal
-                </p>
-
-                <a
-                  href="https://www.numerologiadocasal.com.br/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                >
-                  <span>Descobrir Numerologia do Casal</span>
-                  <ExternalLink size={20} />
-                </a>
-
-                <p className="text-sm text-purple-600 mt-4 italic">
-                  ✨ Entenda a compatibilidade através dos números ✨
-                </p>
-              </div>
-            </CardContent>
-          </Card>
+        {/* Banner Flores - ABAIXO da calculadora */}
+        <section className="max-w-2xl mx-auto px-6 mb-8">
+          <a
+            href="https://www.awin1.com/cread.php?awinmid=109198&awinaffid=1273723&platform=dl&ued=https%3A%2F%2Fwww.giulianaflores.com.br%2Fbuque-de-flores%2Fd8583%2F"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
+          >
+            <img
+              src={bannerFlores}
+              alt="Buquê de Flores - Aproveite!"
+              className="w-full h-auto block"
+            />
+          </a>
         </section>
 
         {/* Conteúdo Expandido: Introdução, Como Usar, FAQ e Ideias de Comemoração */}
