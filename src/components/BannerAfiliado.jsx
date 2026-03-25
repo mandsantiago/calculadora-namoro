@@ -17,7 +17,7 @@ const BannerAfiliado = () => {
           
           <div className="bg-white rounded-lg p-4 border-2 border-orange-300 hover:border-orange-400 transition-colors duration-300">
             <a 
-              href="https://meli.la/1GQTsD3" 
+              href="https://s.shopee.com.br/2qQ77cu4nV" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block hover:opacity-90 transition-opacity duration-300"
