@@ -1,6 +1,7 @@
 import Header from './components/Header.jsx'
 import CalculadoraNamoro from './components/CalculadoraNamoro.jsx'
 import BannerAfiliado from './components/BannerAfiliado.jsx'
+import ContadorDiaDosNamorados from './components/ContadorDiaDosNamorados.jsx'
 import ConteudoExpandido from './components/ConteudoExpandido.jsx'
 import ConteudoSEO from './components/ConteudoSEO.jsx'
 import Footer from './components/Footer.jsx'
@@ -37,6 +38,11 @@ function App() {
               className="w-full h-auto block"
             />
           </a>
+        </section>
+
+        {/* Contador Dia dos Namorados */}
+        <section className="max-w-4xl mx-auto px-6 mb-8">
+          <ContadorDiaDosNamorados />
         </section>
 
         {/* Conteúdo Expandido: Introdução, Como Usar, FAQ e Ideias de Comemoração */}
