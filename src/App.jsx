@@ -5,7 +5,7 @@ import ContadorDiaDosNamorados from './components/ContadorDiaDosNamorados.jsx'
 import ConteudoExpandido from './components/ConteudoExpandido.jsx'
 import ConteudoSEO from './components/ConteudoSEO.jsx'
 import Footer from './components/Footer.jsx'
-import bannerFlores from './assets/bannerflores.webp'
+import bannerBoticario from './assets/diadosnamoradosboti.png'
 import './App.css'
 
 function App() {
@@ -24,17 +24,17 @@ function App() {
           <CalculadoraNamoro />
         </section>
 
-        {/* Banner Flores - ABAIXO da calculadora */}
+        {/* Banner O Boticário - ABAIXO da calculadora */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
-            href="https://www.awin1.com/cread.php?awinmid=109198&awinaffid=1273723&platform=dl&ued=https%3A%2F%2Fwww.giulianaflores.com.br%2Fbuque-de-flores%2Fd8583%2F"
+            href="https://www.awin1.com/cread.php?awinmid=17659&awinaffid=1273723&platform=dl&ued=https%3A%2F%2Fwww.boticario.com.br%2Fpresentes%2Fquiz%2F"
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
           >
             <img
-              src={bannerFlores}
-              alt="Buquê de Flores - Aproveite!"
+              src={bannerBoticario}
+              alt="Presenteie seu amor com O Boticário"
               className="w-full h-auto block"
             />
           </a>
