@@ -192,7 +192,7 @@ const CalculadoraNamoro = () => {
                   rel="noopener noreferrer"
                   className="inline-block w-full md:w-auto bg-white border border-gray-300 text-gray-900 font-medium py-3 px-8 rounded-lg hover:bg-gray-50 transition-colors duration-200 mb-3"
                 >
-                  Criar a página do nosso amor — R$12
+                  Criar a página do nosso amor — R$19,90
                 </a>
                 
                 <p className="text-xs text-gray-500">
