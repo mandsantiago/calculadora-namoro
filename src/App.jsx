@@ -1,6 +1,5 @@
 import Header from './components/Header.jsx'
 import CalculadoraNamoro from './components/CalculadoraNamoro.jsx'
-import BannerAfiliado from './components/BannerAfiliado.jsx'
 import ContadorDiaDosNamorados from './components/ContadorDiaDosNamorados.jsx'
 import ConteudoExpandido from './components/ConteudoExpandido.jsx'
 import ConteudoSEO from './components/ConteudoSEO.jsx'
@@ -14,11 +13,6 @@ function App() {
       <Header />
 
       <main className="py-8">
-        {/* Banner de Afiliado - ACIMA da calculadora */}
-        <section className="max-w-4xl mx-auto px-6 mb-8">
-          <BannerAfiliado />
-        </section>
-
         {/* Calculadora Principal */}
         <section className="mb-8">
           <CalculadoraNamoro />
