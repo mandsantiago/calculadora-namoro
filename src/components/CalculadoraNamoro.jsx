@@ -170,7 +170,37 @@ const CalculadoraNamoro = () => {
               </div>
 
               {/* Detalhes */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* CTA Dinâmico - Site do Casal */}
+              <div className="bg-white rounded-xl border border-pink-200 shadow-sm p-6 md:p-8 text-center mt-8">
+                <div className="flex items-center justify-center gap-2 text-pink-600 font-medium text-sm md:text-base uppercase tracking-wider mb-4">
+                  <Heart size={16} fill="currentColor" />
+                  <span>{resultado.totalDias.toLocaleString()} dias juntos. Essa data merece um lugar especial.</span>
+                </div>
+                
+                <h3 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-4">
+                  Que tal transformar essa história em uma página só de vocês?
+                </h3>
+                
+                <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+                  Foto, música, contador ao vivo e um link eterno — tudo num lugar só.<br className="hidden md:block" />
+                  Um presente simples que dura para sempre.
+                </p>
+                
+                <a 
+                  href="https://www.numerologiadocasal.com.br/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block w-full md:w-auto bg-white border border-gray-300 text-gray-900 font-medium py-3 px-8 rounded-lg hover:bg-gray-50 transition-colors duration-200 mb-3"
+                >
+                  Criar a página do nosso amor — R$12
+                </a>
+                
+                <p className="text-xs text-gray-500">
+                  Pagamento único · Fica no ar para sempre · Pix, cartão ou boleto
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
                 <Card className="bg-white border-purple-200">
                   <CardContent className="p-4 text-center">
                     <Clock className="mx-auto mb-2 text-purple-600" size={24} />
