@@ -1,40 +1,37 @@
-import { Heart, Calendar, Sparkles } from 'lucide-react'
+import { Heart } from 'lucide-react'
 
-const Footer = () => {
+const Footer = ({ setPaginaAtual }) => {
   return (
-    <footer className="bg-gradient-to-r from-purple-800 to-orange-600 text-white py-8 mt-12">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <Heart className="text-red-300" size={24} />
-            <span className="text-xl font-semibold">Calculadora de Namoro</span>
-            <Heart className="text-red-300" size={24} />
-          </div>
-          <p className="text-purple-200 mb-4">
-            Celebre cada momento especial do seu relacionamento
-          </p>
-          <div className="flex items-center justify-center space-x-6 text-sm text-purple-300">
-            <div className="flex items-center space-x-1">
-              <Calendar size={16} />
-              <span>Data de Namoro</span>
-            </div>
-            <div className="flex items-center space-x-1">
-              <Sparkles size={16} />
-              <span>Bodas de Casamento</span>
-            </div>
-            <div className="flex items-center space-x-1">
-              <Heart size={16} />
-              <span>Amor Verdadeiro</span>
-            </div>
-          </div>
-          <div className="mt-6 pt-4 border-t border-purple-400 text-purple-300 text-sm">
-            © 2025 Calculadora de Namoro. Feito com ❤️ para casais apaixonados.
-          </div>
+    <footer className="bg-white border-t border-purple-100 py-8 mt-12">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        <div className="flex items-center justify-center gap-2 text-purple-800 font-medium mb-4">
+          <span>Feito com</span>
+          <Heart className="text-red-500 fill-current" size={16} />
+          <span>para todos os apaixonados</span>
         </div>
+        
+        <div className="flex flex-wrap justify-center gap-4 text-sm text-purple-600 mb-4">
+          <button 
+            onClick={() => setPaginaAtual('home')}
+            className="hover:text-purple-800 transition-colors"
+          >
+            Calculadora
+          </button>
+          <span>•</span>
+          <button 
+            onClick={() => setPaginaAtual('politica')}
+            className="hover:text-purple-800 transition-colors"
+          >
+            Política de Privacidade
+          </button>
+        </div>
+
+        <p className="text-sm text-purple-500">
+          © {new Date().getFullYear()} Calculadora de Namoro. Todos os direitos reservados.
+        </p>
       </div>
     </footer>
   )
 }
 
 export default Footer
-

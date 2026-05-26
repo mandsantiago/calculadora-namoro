@@ -5,16 +5,24 @@ import ConteudoExpandido from './components/ConteudoExpandido.jsx'
 import ConteudoSEO from './components/ConteudoSEO.jsx'
 import Footer from './components/Footer.jsx'
 import CookieBanner from './components/CookieBanner.jsx'
+import PoliticaPrivacidade from './components/PoliticaPrivacidade.jsx'
+import { useState } from 'react'
 import bannerBoticario from './assets/diadosnamoradosboti.png'
 import bannerFloresNamo from './assets/bannerfloresnamo.webp'
 import './App.css'
 
 function App() {
+  const [paginaAtual, setPaginaAtual] = useState('home')
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-25 to-orange-50">
-      <Header />
+      {/* Header removido temporariamente ou não encontrado */}
 
       <main className="py-8">
+        {paginaAtual === 'politica' ? (
+          <PoliticaPrivacidade />
+        ) : (
+          <>
         {/* Banner Giuliana Flores - ACIMA da calculadora */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
@@ -62,14 +70,16 @@ function App() {
           <ConteudoExpandido />
         </section>
 
-        {/* Conteúdo SEO existente (bodas, datas pelo mundo) */}
-        <section>
+        {/* Conteúdo SEO: Datas do Amor e Curiosidades */}
+        <section className="max-w-4xl mx-auto px-6 mb-8">
           <ConteudoSEO />
         </section>
+          </>
+        )}
       </main>
 
-      <Footer />
-      <CookieBanner />
+      <Footer setPaginaAtual={setPaginaAtual} />
+      <CookieBanner setPaginaAtual={setPaginaAtual} />
     </div>
   )
 }
