@@ -4,6 +4,7 @@ import ContadorDiaDosNamorados from './components/ContadorDiaDosNamorados.jsx'
 import ConteudoExpandido from './components/ConteudoExpandido.jsx'
 import ConteudoSEO from './components/ConteudoSEO.jsx'
 import Footer from './components/Footer.jsx'
+import CookieBanner from './components/CookieBanner.jsx'
 import bannerBoticario from './assets/diadosnamoradosboti.png'
 import bannerFloresNamo from './assets/bannerfloresnamo.webp'
 import './App.css'
@@ -68,6 +69,7 @@ function App() {
       </main>
 
       <Footer />
+      <CookieBanner />
     </div>
   )
 }
