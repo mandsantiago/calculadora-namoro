@@ -8,7 +8,7 @@ import CookieBanner from './components/CookieBanner.jsx'
 import PoliticaPrivacidade from './components/PoliticaPrivacidade.jsx'
 import { useState } from 'react'
 import bannerBoticario from './assets/diadosnamoradosboti.png'
-import bannerFloresNamo from './assets/bannerfloresnamo.webp'
+import bannerOleo from './assets/banneroleo.png'
 import './App.css'
 
 function App() {
@@ -23,17 +23,17 @@ function App() {
           <PoliticaPrivacidade />
         ) : (
           <>
-        {/* Banner Giuliana Flores - ACIMA da calculadora */}
+        {/* Banner Óleo de Massagem - ACIMA da calculadora */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
-            href="https://www.awin1.com/cread.php?awinmid=109198&awinaffid=1273723&platform=dl&ued=https%3A%2F%2Fwww.giulianaflores.com.br%2Ftipos-de-flores%2Frosas%2Fd1139%2F%3Fsrcb%3DSrosas59"
+            href="https://s.shopee.com.br/4VZwGHrDI9"
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
           >
             <img
-              src={bannerFloresNamo}
-              alt="Rosas - Beleza e afeto em uma escolha especial!"
+              src={bannerOleo}
+              alt="Óleo de Massagem Beijável - Diversos Aromas"
               className="w-full h-auto block"
             />
           </a>
