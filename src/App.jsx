@@ -9,6 +9,7 @@ import PoliticaPrivacidade from './components/PoliticaPrivacidade.jsx'
 import { useState } from 'react'
 import bannerBoticario from './assets/diadosnamoradosboti.png'
 import bannerOleo from './assets/banneroleo.png'
+import bannerLingerie from './assets/bannerlingerie.png'
 import './App.css'
 
 function App() {
@@ -23,7 +24,28 @@ function App() {
           <PoliticaPrivacidade />
         ) : (
           <>
-        {/* Banner Óleo de Massagem - ACIMA da calculadora */}
+        {/* Banner Lingerie - ACIMA da calculadora */}
+        <section className="max-w-2xl mx-auto px-6 mb-8">
+          <a
+            href="https://s.shopee.com.br/LkQVppbNP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
+          >
+            <img
+              src={bannerLingerie}
+              alt="Lingerie - Para se sentir linda. Para deixar ele sem palavras."
+              className="w-full h-auto block"
+            />
+          </a>
+        </section>
+
+        {/* Calculadora Principal */}
+        <section className="mb-8">
+          <CalculadoraNamoro />
+        </section>
+
+        {/* Banner Óleo de Massagem - ABAIXO da calculadora */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
             href="https://s.shopee.com.br/4VZwGHrDI9"
@@ -39,12 +61,12 @@ function App() {
           </a>
         </section>
 
-        {/* Calculadora Principal */}
-        <section className="mb-8">
-          <CalculadoraNamoro />
+        {/* Contador Dia dos Namorados */}
+        <section className="max-w-4xl mx-auto px-6 mb-8">
+          <ContadorDiaDosNamorados />
         </section>
 
-        {/* Banner O Boticário - ABAIXO da calculadora */}
+        {/* Banner O Boticário - ABAIXO do contador */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
             href="https://meli.la/1oqucF2"
@@ -58,11 +80,6 @@ function App() {
               className="w-full h-auto block"
             />
           </a>
-        </section>
-
-        {/* Contador Dia dos Namorados */}
-        <section className="max-w-4xl mx-auto px-6 mb-8">
-          <ContadorDiaDosNamorados />
         </section>
 
         {/* Conteúdo Expandido: Introdução, Como Usar, FAQ e Ideias de Comemoração */}
