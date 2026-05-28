@@ -69,7 +69,7 @@ function App() {
         {/* Banner O Boticário - ABAIXO do contador */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
-            href="https://meli.la/1oqucF2"
+            href="https://meli.la/2UctS9o"
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
