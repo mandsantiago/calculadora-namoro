@@ -8,7 +8,7 @@ import CookieBanner from './components/CookieBanner.jsx'
 import PoliticaPrivacidade from './components/PoliticaPrivacidade.jsx'
 import { useState } from 'react'
 import bannerBoticario from './assets/diadosnamoradosboti.png'
-import bannerOleo from './assets/banneroleo.png'
+import bannerHidrat from './assets/bannerhidrat.webp'
 import bannerLingerie from './assets/bannerlingerie.png'
 import './App.css'
 
@@ -45,17 +45,17 @@ function App() {
           <CalculadoraNamoro />
         </section>
 
-        {/* Banner Óleo de Massagem - ABAIXO da calculadora */}
+        {/* Banner Natura Tododia - ABAIXO da calculadora */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
-            href="https://s.shopee.com.br/4VZwGHrDI9"
+            href="https://s.shopee.com.br/6L1k1UMk9o"
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
           >
             <img
-              src={bannerOleo}
-              alt="Óleo de Massagem Beijável - Diversos Aromas"
+              src={bannerHidrat}
+              alt="Natura Tododia - Pele cheirosa e hidratada em qualquer ocasião"
               className="w-full h-auto block"
             />
           </a>
@@ -69,7 +69,7 @@ function App() {
         {/* Banner O Boticário - ABAIXO do contador */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
-            href="https://meli.la/2UctS9o"
+            href="https://meli.la/1oqucF2"
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
