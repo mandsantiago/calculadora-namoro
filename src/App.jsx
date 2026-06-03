@@ -10,6 +10,7 @@ import { useState } from 'react'
 import bannerBoticario from './assets/diadosnamoradosboti.png'
 import bannerHidrat from './assets/bannerhidrat.webp'
 import bannerLingerie from './assets/bannerlingerie.png'
+import bannerLivro from './assets/bannerlivro.png'
 import './App.css'
 
 function App() {
@@ -66,7 +67,23 @@ function App() {
           <ContadorDiaDosNamorados />
         </section>
 
-        {/* Banner O Boticário - ABAIXO do contador */}
+        {/* Banner As 5 Linguagens do Amor - ABAIXO do contador */}
+        <section className="max-w-2xl mx-auto px-6 mb-8">
+          <a
+            href="https://amzn.to/4vrEy95"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
+          >
+            <img
+              src={bannerLivro}
+              alt="As 5 Linguagens do Amor - Gary Chapman"
+              className="w-full h-auto block"
+            />
+          </a>
+        </section>
+
+        {/* Banner O Boticário - ABAIXO do banner do livro */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
             href="https://meli.la/1oqucF2"
