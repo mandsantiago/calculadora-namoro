@@ -7,7 +7,6 @@ import Footer from './components/Footer.jsx'
 import CookieBanner from './components/CookieBanner.jsx'
 import PoliticaPrivacidade from './components/PoliticaPrivacidade.jsx'
 import { useState } from 'react'
-import bannerBoticario from './assets/diadosnamoradosboti.png'
 import bannerHidrat from './assets/bannerhidrat.webp'
 import bannerLingerie from './assets/bannerlingerie.png'
 import bannerBolsa from './assets/bannerbolsadesign.webp'
@@ -78,22 +77,6 @@ function App() {
             <img
               src={bannerBolsa}
               alt="Bolsas Diferentes. Mulheres Únicas."
-              className="w-full h-auto block"
-            />
-          </a>
-        </section>
-
-        {/* Banner O Boticário - ABAIXO do banner do livro */}
-        <section className="max-w-2xl mx-auto px-6 mb-8">
-          <a
-            href="https://meli.la/1oqucF2"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
-          >
-            <img
-              src={bannerBoticario}
-              alt="Presenteie seu amor com O Boticário"
               className="w-full h-auto block"
             />
           </a>
