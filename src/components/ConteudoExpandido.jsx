@@ -199,7 +199,10 @@ const marcos = [
     label: '1 Ano',
     titulo: 'Primeiro aniversário — a grande celebração',
     descricao: 'Um ano juntos merece festa! Volte ao lugar do primeiro encontro, surpreenda com uma experiência inédita, presenteie com um perfume especial ou presenteie com algo que vai durar muitos anos — assim como o amor de vocês.',
-    tagLinks: [{ texto: '📸 Álbum de fotos do ano', url: 'https://meli.la/1eWRMhy' }],
+    tagLinks: [
+      { texto: '📸 Álbum de fotos do ano', url: 'https://meli.la/1eWRMhy' },
+      { texto: '📷 Câmera instantânea', url: 'https://dicasinstax.com.br/' },
+    ],
     tags: ['✈️ Viagem surpresa', '💍 Joia com a data gravada', '🥂 Jantar especial com champanhe'],
     linkPerfume: 'https://meuperfumeideal.com.br/perfume/',
   },
