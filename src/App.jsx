@@ -26,7 +26,7 @@ function App() {
         {/* Banner Lingerie - ACIMA da calculadora */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
-            href="https://s.shopee.com.br/LkQVppbNP"
+            href="https://meli.la/2uvQHDj"
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
