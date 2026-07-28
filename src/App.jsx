@@ -6,9 +6,8 @@ import Footer from './components/Footer.jsx'
 import CookieBanner from './components/CookieBanner.jsx'
 import PoliticaPrivacidade from './components/PoliticaPrivacidade.jsx'
 import { useState } from 'react'
-import bannerHidrat from './assets/bannerhidrat.webp'
 import bannerLingerie from './assets/bannerlingerie.png'
-import bannerBolsa from './assets/bannerbolsadesign.webp'
+import bannerCinta from './assets/bannercinta.webp'
 import './App.css'
 
 function App() {
@@ -26,7 +25,7 @@ function App() {
         {/* Banner Lingerie - ACIMA da calculadora */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
-            href="https://meli.la/2b1m6zU"
+            href="https://meli.la/1KkeGfP"
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
@@ -39,41 +38,25 @@ function App() {
           </a>
         </section>
 
+        {/* Banner Cinta Elastique - ABAIXO da lingerie e ACIMA da calculadora */}
+        <section className="max-w-2xl mx-auto px-6 mb-8">
+          <a
+            href="https://meli.la/2Teopxs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
+          >
+            <img
+              src={bannerCinta}
+              alt="Cinta Elastique Feminina Modeladora - Modela sua cintura e valoriza suas curvas"
+              className="w-full h-auto block"
+            />
+          </a>
+        </section>
+
         {/* Calculadora Principal */}
         <section className="mb-8">
           <CalculadoraNamoro />
-        </section>
-
-        {/* Banner Natura Tododia - ABAIXO da calculadora */}
-        <section className="max-w-2xl mx-auto px-6 mb-8">
-          <a
-            href="https://s.shopee.com.br/6L1k1UMk9o"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
-          >
-            <img
-              src={bannerHidrat}
-              alt="Natura Tododia - Pele cheirosa e hidratada em qualquer ocasião"
-              className="w-full h-auto block"
-            />
-          </a>
-        </section>
-
-        {/* Banner Bolsas AliExpress - ABAIXO do contador */}
-        <section className="max-w-2xl mx-auto px-6 mb-8">
-          <a
-            href="https://s.click.aliexpress.com/e/_c4qQ5u2t"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
-          >
-            <img
-              src={bannerBolsa}
-              alt="Bolsas Diferentes. Mulheres Únicas."
-              className="w-full h-auto block"
-            />
-          </a>
         </section>
 
         {/* Conteúdo Expandido: Introdução, Como Usar, FAQ e Ideias de Comemoração */}
