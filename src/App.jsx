@@ -25,7 +25,7 @@ function App() {
         {/* Banner Lingerie - ACIMA da calculadora */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
-            href="https://meli.la/1KkeGfP"
+            href="https://meli.la/2T9WNFe"
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
@@ -41,7 +41,7 @@ function App() {
         {/* Banner Cinta Elastique - ABAIXO da lingerie e ACIMA da calculadora */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
-            href="https://meli.la/2Teopxs"
+            href="https://meli.la/23fTRMm"
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
