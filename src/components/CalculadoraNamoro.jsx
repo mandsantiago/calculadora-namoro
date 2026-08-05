@@ -156,6 +156,7 @@ const CalculadoraNamoro = () => {
 
           {resultado && (
             <div className="mt-8 space-y-6">
+
               {/* Resultado Principal */}
               <div className="text-center p-6 bg-white rounded-lg shadow-md border border-purple-200">
                 <h3 className="text-2xl font-bold text-purple-800 mb-4">
@@ -169,8 +170,54 @@ const CalculadoraNamoro = () => {
                 </div>
               </div>
 
-              {/* Detalhes */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+              {/* Chamadas de afiliados — logo após o resultado principal */}
+              <div className="rounded-2xl p-6" style={{ background: 'linear-gradient(180deg, #FBF3F7 0%, #F7EFEA 100%)' }}>
+                <p className="text-center text-purple-700 font-semibold text-base mb-4">
+                  Celebre esse momento especial 🎉
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                  {/* Card 1 - Decoração romântica */}
+                  <div className="bg-white border border-pink-100 rounded-2xl p-5 flex flex-col gap-3">
+                    <div className="w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center">
+                      <Flame size={18} className="text-purple-700" />
+                    </div>
+                    <p className="font-semibold text-sm text-purple-900">Que tal fazer uma surpresa para comemorar o relacionamento?</p>
+                    <p className="text-xs text-gray-500 leading-relaxed">Vela, pétalas e balões pra transformar a casa numa surpresa romântica.</p>
+                    <a
+                      href="https://meli.la/1KMRGTT"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 text-center py-2.5 rounded-xl text-white text-sm font-semibold no-underline transition-opacity hover:opacity-90"
+                      style={{ background: 'linear-gradient(90deg, #8B3FBF, #E8642B)' }}
+                    >
+                      Ver kit de decoração
+                    </a>
+                  </div>
+
+                  {/* Card 2 - Kit Natura */}
+                  <div className="bg-white border border-pink-100 rounded-2xl p-5 flex flex-col gap-3">
+                    <div className="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center">
+                      <Flower2 size={18} className="text-pink-600" />
+                    </div>
+                    <p className="font-semibold text-sm text-purple-900">Esteja sempre cheirosa e hidratada</p>
+                    <p className="text-xs text-gray-500 leading-relaxed">Hidratante + body splash Natura para se sentir ainda mais especial.</p>
+                    <a
+                      href="https://meli.la/28m6w51"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 text-center py-2.5 rounded-xl text-white text-sm font-semibold no-underline transition-opacity hover:opacity-90"
+                      style={{ background: 'linear-gradient(90deg, #8B3FBF, #E8642B)' }}
+                    >
+                      Ver kit Natura
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              {/* Detalhes — dias, horas, semanas etc. */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <Card className="bg-white border-purple-200">
                   <CardContent className="p-4 text-center">
                     <Clock className="mx-auto mb-2 text-purple-600" size={24} />
@@ -218,52 +265,6 @@ const CalculadoraNamoro = () => {
                     <div className="text-sm text-purple-600">Minutos totais</div>
                   </CardContent>
                 </Card>
-              </div>
-
-              {/* Chamadas de afiliados após o resultado */}
-              <div className="rounded-2xl p-6" style={{ background: 'linear-gradient(180deg, #FBF3F7 0%, #F7EFEA 100%)' }}>
-                <p className="text-center text-purple-700 font-semibold text-base mb-4">
-                  Celebre esse momento especial 🎉
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-
-                  {/* Card 1 - Decoração romântica */}
-                  <div className="bg-white border border-pink-100 rounded-2xl p-5 flex flex-col gap-3">
-                    <div className="w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center">
-                      <Flame size={18} className="text-purple-700" />
-                    </div>
-                    <p className="font-semibold text-sm text-purple-900">Comemore esse marco em grande estilo</p>
-                    <p className="text-xs text-gray-500 leading-relaxed">Vela, pétalas e balões pra transformar a casa numa surpresa romântica.</p>
-                    <a
-                      href="https://meli.la/1KMRGTT"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-1 text-center py-2.5 rounded-xl text-white text-sm font-semibold no-underline transition-opacity hover:opacity-90"
-                      style={{ background: 'linear-gradient(90deg, #8B3FBF, #E8642B)' }}
-                    >
-                      Ver kit de decoração
-                    </a>
-                  </div>
-
-                  {/* Card 2 - Kit Natura */}
-                  <div className="bg-white border border-pink-100 rounded-2xl p-5 flex flex-col gap-3">
-                    <div className="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center">
-                      <Flower2 size={18} className="text-pink-600" />
-                    </div>
-                    <p className="font-semibold text-sm text-purple-900">Um mimo pra ela</p>
-                    <p className="text-xs text-gray-500 leading-relaxed">Hidratante + body splash Natura pra ela se sentir ainda mais especial.</p>
-                    <a
-                      href="https://meli.la/28m6w51"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-1 text-center py-2.5 rounded-xl text-white text-sm font-semibold no-underline transition-opacity hover:opacity-90"
-                      style={{ background: 'linear-gradient(90deg, #8B3FBF, #E8642B)' }}
-                    >
-                      Ver kit Natura
-                    </a>
-                  </div>
-
-                </div>
               </div>
 
             </div>
