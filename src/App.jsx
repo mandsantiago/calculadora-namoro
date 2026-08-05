@@ -38,7 +38,12 @@ function App() {
           </a>
         </section>
 
-        {/* Banner Cinta Elastique - ABAIXO da lingerie e ACIMA da calculadora */}
+        {/* Calculadora Principal */}
+        <section className="mb-8">
+          <CalculadoraNamoro />
+        </section>
+
+        {/* Banner Cinta Elastique - ABAIXO da calculadora */}
         <section className="max-w-2xl mx-auto px-6 mb-8">
           <a
             href="https://meli.la/23fTRMm"
@@ -52,11 +57,6 @@ function App() {
               className="w-full h-auto block"
             />
           </a>
-        </section>
-
-        {/* Calculadora Principal */}
-        <section className="mb-8">
-          <CalculadoraNamoro />
         </section>
 
         {/* Conteúdo Expandido: Introdução, Como Usar, FAQ e Ideias de Comemoração */}

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Input } from '@/components/ui/input.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
-import { Heart, Calendar, Clock, Sparkles } from 'lucide-react'
+import { Heart, Calendar, Clock, Sparkles, Flame, Flower2 } from 'lucide-react'
 
 const CalculadoraNamoro = () => {
   const [dataInicio, setDataInicio] = useState('')
@@ -219,6 +219,53 @@ const CalculadoraNamoro = () => {
                   </CardContent>
                 </Card>
               </div>
+
+              {/* Chamadas de afiliados após o resultado */}
+              <div className="rounded-2xl p-6" style={{ background: 'linear-gradient(180deg, #FBF3F7 0%, #F7EFEA 100%)' }}>
+                <p className="text-center text-purple-700 font-semibold text-base mb-4">
+                  Celebre esse momento especial 🎉
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                  {/* Card 1 - Decoração romântica */}
+                  <div className="bg-white border border-pink-100 rounded-2xl p-5 flex flex-col gap-3">
+                    <div className="w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center">
+                      <Flame size={18} className="text-purple-700" />
+                    </div>
+                    <p className="font-semibold text-sm text-purple-900">Comemore esse marco em grande estilo</p>
+                    <p className="text-xs text-gray-500 leading-relaxed">Vela, pétalas e balões pra transformar a casa numa surpresa romântica.</p>
+                    <a
+                      href="https://meli.la/1KMRGTT"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 text-center py-2.5 rounded-xl text-white text-sm font-semibold no-underline transition-opacity hover:opacity-90"
+                      style={{ background: 'linear-gradient(90deg, #8B3FBF, #E8642B)' }}
+                    >
+                      Ver kit de decoração
+                    </a>
+                  </div>
+
+                  {/* Card 2 - Kit Natura */}
+                  <div className="bg-white border border-pink-100 rounded-2xl p-5 flex flex-col gap-3">
+                    <div className="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center">
+                      <Flower2 size={18} className="text-pink-600" />
+                    </div>
+                    <p className="font-semibold text-sm text-purple-900">Um mimo pra ela</p>
+                    <p className="text-xs text-gray-500 leading-relaxed">Hidratante + body splash Natura pra ela se sentir ainda mais especial.</p>
+                    <a
+                      href="https://meli.la/28m6w51"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 text-center py-2.5 rounded-xl text-white text-sm font-semibold no-underline transition-opacity hover:opacity-90"
+                      style={{ background: 'linear-gradient(90deg, #8B3FBF, #E8642B)' }}
+                    >
+                      Ver kit Natura
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
           )}
         </CardContent>
@@ -228,4 +275,3 @@ const CalculadoraNamoro = () => {
 }
 
 export default CalculadoraNamoro
-
