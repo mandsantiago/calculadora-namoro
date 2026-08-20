@@ -1,79 +1,33 @@
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header.jsx'
-import CalculadoraNamoro from './components/CalculadoraNamoro.jsx'
-import ConteudoExpandido from './components/ConteudoExpandido.jsx'
-import ConteudoSEO from './components/ConteudoSEO.jsx'
 import Footer from './components/Footer.jsx'
 import CookieBanner from './components/CookieBanner.jsx'
-import PoliticaPrivacidade from './components/PoliticaPrivacidade.jsx'
-import { useState } from 'react'
-import bannerLingerie from './assets/bannerlingerie.png'
-import bannerCinta from './assets/bannercinta.webp'
+import ScrollToTop from './components/ScrollToTop.jsx'
+import Home from './pages/Home.jsx'
+import BodasDeCasamento from './pages/BodasDeCasamento.jsx'
+import IdeiasPresenteNamoro from './pages/IdeiasPresenteNamoro.jsx'
+import DiaDosNamorados from './pages/DiaDosNamorados.jsx'
+import PoliticaPrivacidadePage from './pages/PoliticaPrivacidadePage.jsx'
 import './App.css'
 
 function App() {
-  const [paginaAtual, setPaginaAtual] = useState('home')
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-25 to-orange-50">
-      {/* Header removido temporariamente ou não encontrado */}
+      <ScrollToTop />
+      <Header />
 
       <main className="py-8">
-        {paginaAtual === 'politica' ? (
-          <PoliticaPrivacidade />
-        ) : (
-          <>
-        {/* Banner Lingerie - ACIMA da calculadora */}
-        <section className="max-w-2xl mx-auto px-6 mb-8">
-          <a
-            href="https://meli.la/2T9WNFe"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
-          >
-            <img
-              src={bannerLingerie}
-              alt="Lingerie - Para se sentir linda. Para deixar ele sem palavras."
-              className="w-full h-auto block"
-            />
-          </a>
-        </section>
-
-        {/* Calculadora Principal */}
-        <section className="mb-8">
-          <CalculadoraNamoro />
-        </section>
-
-        {/* Banner Cinta Elastique - ABAIXO da calculadora */}
-        <section className="max-w-2xl mx-auto px-6 mb-8">
-          <a
-            href="https://meli.la/23fTRMm"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 hover:opacity-95"
-          >
-            <img
-              src={bannerCinta}
-              alt="Cinta Elastique Feminina Modeladora - Modela sua cintura e valoriza suas curvas"
-              className="w-full h-auto block"
-            />
-          </a>
-        </section>
-
-        {/* Conteúdo Expandido: Introdução, Como Usar, FAQ e Ideias de Comemoração */}
-        <section className="px-4">
-          <ConteudoExpandido />
-        </section>
-
-        {/* Conteúdo SEO: Datas do Amor e Curiosidades */}
-        <section className="max-w-4xl mx-auto px-6 mb-8">
-          <ConteudoSEO />
-        </section>
-          </>
-        )}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/bodas-de-casamento" element={<BodasDeCasamento />} />
+          <Route path="/ideias-presente-namoro" element={<IdeiasPresenteNamoro />} />
+          <Route path="/dia-dos-namorados" element={<DiaDosNamorados />} />
+          <Route path="/politica-de-privacidade" element={<PoliticaPrivacidadePage />} />
+        </Routes>
       </main>
 
-      <Footer setPaginaAtual={setPaginaAtual} />
-      <CookieBanner setPaginaAtual={setPaginaAtual} />
+      <Footer />
+      <CookieBanner />
     </div>
   )
 }

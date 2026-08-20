@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button.jsx'
 import { Input } from '@/components/ui/input.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Heart, Calendar, Clock, Sparkles, Flame, Flower2 } from 'lucide-react'
+import { getBodaAtual } from '@/data/bodas.js'
 
 const CalculadoraNamoro = () => {
   const [dataInicio, setDataInicio] = useState('')
@@ -75,57 +76,17 @@ const CalculadoraNamoro = () => {
     })
   }
 
-  const getBodaAtual = (anos) => {
-    const bodasMap = {
-      1: 'Bodas de Papel',
-      2: 'Bodas de Algodão',
-      3: 'Bodas de Trigo',
-      4: 'Bodas de Linho',
-      5: 'Bodas de Madeira ou Ferro',
-      6: 'Bodas de Perfume ou Açúcar',
-      7: 'Bodas de Latão ou Lã',
-      8: 'Bodas de Papoula ou Barro',
-      9: 'Bodas de Cerâmica ou Vime',
-      10: 'Bodas de Estanho',
-      11: 'Bodas de Aço',
-      12: 'Bodas de Seda ou Ônix',
-      13: 'Bodas de Linho ou Renda',
-      14: 'Bodas de Marfim',
-      15: 'Bodas de Cristal',
-      16: 'Bodas de Turmalina',
-      17: 'Bodas de Rosa',
-      18: 'Bodas de Turquesa',
-      19: 'Bodas de Cretone ou Água-marinha',
-      20: 'Bodas de Porcelana',
-      21: 'Bodas de Zircão',
-      22: 'Bodas de Louça',
-      23: 'Bodas de Palha',
-      24: 'Bodas de Opala',
-      25: 'Bodas de Prata',
-      30: 'Bodas de Pérola',
-      35: 'Bodas de Coral',
-      40: 'Bodas de Esmeralda',
-      45: 'Bodas de Rubi',
-      50: 'Bodas de Ouro',
-      55: 'Bodas de Ametista',
-      60: 'Bodas de Diamante',
-      65: 'Bodas de Platina',
-      70: 'Bodas de Vinho',
-      75: 'Bodas de Brilhante'
-    }
-
-    return bodasMap[anos] || (anos > 0 ? `${anos} anos de união` : 'Início da jornada')
-  }
-
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-8">
       {/* Calculadora Principal */}
       <Card className="bg-gradient-to-br from-purple-50 to-orange-50 border-purple-200">
         <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-bold text-purple-800 flex items-center justify-center gap-2">
-            <Heart className="text-red-500" />
-            Calculadora de Tempo de Namoro
-            <Heart className="text-red-500" />
+          <CardTitle className="p-0">
+            <h1 className="text-3xl font-bold text-purple-800 flex items-center justify-center gap-2">
+              <Heart className="text-red-500" />
+              Calculadora de Tempo de Namoro
+              <Heart className="text-red-500" />
+            </h1>
           </CardTitle>
           <CardDescription className="text-lg text-purple-600">
             Descubra há quanto tempo vocês estão juntos e qual boda estão comemorando

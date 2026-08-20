@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const CookieBanner = ({ setPaginaAtual }) => {
+const CookieBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -58,15 +59,13 @@ const CookieBanner = ({ setPaginaAtual }) => {
         <div className="flex-1 text-sm text-gray-600 leading-relaxed">
           <p>
             Utilizamos cookies para melhorar sua experiência no Data de Namoro! Eles nos ajudam a entender como você interage com o site, permitindo exibir conteúdos personalizados, analisar nosso tráfego (como dados demográficos) e otimizar nossas ferramentas. Ao clicar em 'Aceitar Todos', você concorda com o uso de cookies de acordo com a nossa{' '}
-            <button 
-              onClick={() => {
-                setPaginaAtual('politica');
-                window.scrollTo(0, 0);
-              }} 
+            <Link
+              to="/politica-de-privacidade"
+              onClick={() => window.scrollTo(0, 0)}
               className="text-purple-600 hover:text-purple-800 underline font-medium"
             >
               Política de Privacidade
-            </button>.
+            </Link>.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto shrink-0">

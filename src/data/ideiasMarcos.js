@@ -1,0 +1,60 @@
+// Ideias de comemoração por marco do relacionamento — usado na página /ideias-presente-namoro
+export const marcos = [
+  {
+    emoji: '🌷',
+    label: '1 Mês',
+    titulo: 'O primeiro mês — a euforia ainda está no ar',
+    descricao: 'É cedo, mas é lindo! Um café da manhã surpresa, uma mensagem especial ao acordar ou uma foto emoldurada do primeiro encontro já fazem a memória ficar marcada para sempre.',
+    tags: ['☕ Café da manhã surpresa', '💌 Carta escrita à mão', '🎵 Playlist personalizada'],
+    tagLinks: [{ texto: '📷 Foto emoldurada', url: 'https://meli.la/13W6rxe' }],
+  },
+  {
+    emoji: '🌹',
+    label: '6 Meses',
+    titulo: 'Meio ano — vocês se conhecem de verdade agora',
+    descricao: 'Seis meses é um marco incrível. Vocês já passaram por momentos juntos e construíram uma rotina. Hora de celebrar o que viveram e antecipar o que ainda vem.',
+    tagLinks: [{ texto: '🎁 Caixa de memórias dos 6 meses', url: 'https://meli.la/2uH1wTc' }],
+    tags: ['🍽️ Jantar no restaurante favorito', '📔 Diário compartilhado', '🌅 Passeio ao pôr do sol'],
+  },
+  {
+    emoji: '🎉',
+    label: '1 Ano',
+    titulo: 'Primeiro aniversário — a grande celebração',
+    descricao: 'Um ano juntos merece festa! Volte ao lugar do primeiro encontro, surpreenda com uma experiência inédita, presenteie com um perfume especial ou presenteie com algo que vai durar muitos anos — assim como o amor de vocês.',
+    tagLinks: [
+      { texto: '📸 Álbum de fotos do ano', url: 'https://meli.la/1eWRMhy' },
+      { texto: '📷 Câmera instantânea', url: 'https://dicasinstax.com.br/' },
+    ],
+    tags: ['✈️ Viagem surpresa', '💍 Joia com a data gravada', '🥂 Jantar especial com champanhe'],
+    linkPerfume: 'https://meuperfumeideal.com.br/perfume/',
+  },
+  {
+    emoji: '💙',
+    label: '2–4 Anos',
+    titulo: 'A fase da cumplicidade profunda',
+    descricao: 'Os presentes agora podem ser mais significativos e ligados a projetos futuros — uma viagem dos sonhos, um curso que sempre quiseram fazer juntos ou um presente que simboliza o próximo passo da relação.',
+    tags: ['⛺ Camping ou ecoturismo', '🎨 Curso juntos (culinária, dança)', '🌍 Viagem internacional'],
+    tagLinks: [{ texto: '🖼️ Quadro de arte personalizado', url: 'https://meli.la/2vuVnSW' }],
+  },
+  {
+    emoji: '🪵',
+    label: '5 Anos',
+    titulo: 'Bodas de Madeira — sólidos como uma árvore',
+    descricao: 'Cinco anos é uma conquista enorme! Assim como a madeira, o amor de vocês ficou mais resistente com o tempo. Presentear com algo feito em madeira é um gesto simbólico e cheio de significado.',
+    tags: ['🪵 Presente em madeira personalizado', '🌳 Plantar uma árvore juntos', '🏕️ Experiência de glamping', '📝 Renovação de votos'],
+  },
+  {
+    emoji: '🥈',
+    label: '25 Anos',
+    titulo: 'Bodas de Prata — um amor que brilha',
+    descricao: 'Vinte e cinco anos juntos é uma história inteira. As Bodas de Prata merecem uma festa inesquecível — renove os votos, junte família e amigos e celebre cada capítulo que escreveram juntos.',
+    tags: ['💎 Joia em prata com data gravada', '🎊 Festa de renovação de votos', '✈️ Viagem dos sonhos', '📖 Livro da história do casal'],
+  },
+  {
+    emoji: '🥇',
+    label: '50 Anos',
+    titulo: 'Bodas de Ouro — o amor mais precioso',
+    descricao: 'Cinquenta anos juntos é uma raridade preciosa. Um jantar especial com toda a família, renovação de votos emocionante e presentes simbólicos em ouro marcam este dia inesquecível.',
+    tags: ['💍 Alianças em ouro renovadas', '👨‍👩‍👧‍👦 Reunião de toda a família', '🎥 Vídeo com mensagens dos filhos', '🌹 50 rosas vermelhas'],
+  },
+]

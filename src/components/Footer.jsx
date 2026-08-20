@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import { Heart } from 'lucide-react'
 
-const Footer = ({ setPaginaAtual }) => {
+const Footer = () => {
   return (
     <footer className="bg-white border-t border-purple-100 py-8 mt-12">
       <div className="max-w-4xl mx-auto px-6 text-center">
@@ -11,19 +12,25 @@ const Footer = ({ setPaginaAtual }) => {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 text-sm text-purple-600 mb-6">
-          <button
-            onClick={() => setPaginaAtual('home')}
-            className="hover:text-purple-800 transition-colors"
-          >
+          <Link to="/" className="hover:text-purple-800 transition-colors">
             Calculadora
-          </button>
+          </Link>
           <span>•</span>
-          <button
-            onClick={() => setPaginaAtual('politica')}
-            className="hover:text-purple-800 transition-colors"
-          >
+          <Link to="/bodas-de-casamento" className="hover:text-purple-800 transition-colors">
+            Bodas de Casamento
+          </Link>
+          <span>•</span>
+          <Link to="/ideias-presente-namoro" className="hover:text-purple-800 transition-colors">
+            Ideias de Presente
+          </Link>
+          <span>•</span>
+          <Link to="/dia-dos-namorados" className="hover:text-purple-800 transition-colors">
+            Dia dos Namorados
+          </Link>
+          <span>•</span>
+          <Link to="/politica-de-privacidade" className="hover:text-purple-800 transition-colors">
             Política de Privacidade
-          </button>
+          </Link>
         </div>
 
         <div className="mb-6">
