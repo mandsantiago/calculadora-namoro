@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 
-const SITE_URL = 'https://datadenamoro.com.br'
+const SITE_URL = 'https://www.datadenamoro.com.br'
 const SITE_NAME = 'Calculadora de Namoro'
 
 /**
