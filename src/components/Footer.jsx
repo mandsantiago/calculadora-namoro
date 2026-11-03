@@ -37,15 +37,6 @@ const Footer = () => {
           <p className="text-sm font-semibold text-purple-700 mb-3">Confira meus outros sites:</p>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
             <a
-              href="https://meutipodepele.com.br/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-pink-600 hover:text-pink-800 hover:underline transition-colors"
-            >
-              Descubra seu tipo de pele
-            </a>
-            <span className="text-purple-300">•</span>
-            <a
               href="https://semanasdegravidez.com.br/"
               target="_blank"
               rel="noopener noreferrer"
@@ -61,6 +52,24 @@ const Footer = () => {
               className="text-pink-600 hover:text-pink-800 hover:underline transition-colors"
             >
               Dicas de rotina de banho
+            </a>
+            <span className="text-purple-300">•</span>
+            <a
+              href="https://deepseek.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-600 hover:text-pink-800 hover:underline transition-colors"
+            >
+              Dicas e tutoriais de inteligência artificial
+            </a>
+            <span className="text-purple-300">•</span>
+            <a
+              href="https://app.meuperfumeideal.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-600 hover:text-pink-800 hover:underline transition-colors"
+            >
+              Descubra seu perfume ideal
             </a>
           </div>
         </div>
