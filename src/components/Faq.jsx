@@ -8,6 +8,8 @@ const ItemFAQ = ({ pergunta, resposta }) => {
       className={`bg-white border rounded-xl overflow-hidden transition-shadow duration-200 ${aberto ? 'border-purple-300 shadow-md' : 'border-pink-100'}`}
     >
       <button
+        type="button"
+        aria-expanded={aberto}
         onClick={() => setAberto(!aberto)}
         className="w-full flex items-center gap-3 px-5 py-4 text-left font-semibold text-gray-800 hover:bg-pink-50 transition-colors"
       >
@@ -19,11 +21,14 @@ const ItemFAQ = ({ pergunta, resposta }) => {
           <ChevronDown size={18} className="text-purple-400 flex-shrink-0" />
         )}
       </button>
-      {aberto && (
-        <div className="px-5 pb-4 pl-10 text-gray-500 text-sm leading-relaxed">
-          {resposta}
-        </div>
-      )}
+      {/* A resposta fica sempre no HTML (só escondida visualmente quando
+          fechada), para o Google ler o texto do FAQ junto com o JSON-LD. */}
+      <div
+        hidden={!aberto}
+        className="px-5 pb-4 pl-10 text-gray-500 text-sm leading-relaxed"
+      >
+        {resposta}
+      </div>
     </div>
   )
 }

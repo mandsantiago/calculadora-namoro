@@ -28,6 +28,10 @@ const Footer = () => {
             Dia dos Namorados
           </Link>
           <span>•</span>
+          <Link to="/simpatias-para-ele-se-apaixonar" className="hover:text-purple-800 transition-colors">
+            Simpatias de Amor
+          </Link>
+          <span>•</span>
           <Link to="/politica-de-privacidade" className="hover:text-purple-800 transition-colors">
             Política de Privacidade
           </Link>

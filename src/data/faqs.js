@@ -49,3 +49,30 @@ export const faqsIdeias = [
     resposta: 'O primeiro aniversário de 1 ano é um marco muito especial! Algumas ideias: um álbum ou livro personalizado com fotos e memórias do ano; uma viagem — mesmo que curta — para um lugar que sempre quiseram conhecer; uma joia com a data gravada; um jantar no restaurante da primeira vez; ou uma caixa surpresa com 12 itens que representam um momento especial de cada mês. O mais importante é mostrar que você refletiu sobre o que viveram.',
   },
 ]
+
+export const faqsSimpatias = [
+  {
+    pergunta: 'Simpatia para ele se apaixonar funciona?',
+    resposta: 'Simpatia é uma tradição de fé e crença popular, sem comprovação científica. Para quem acredita, ela ajuda a colocar a intenção no mundo e a se sentir mais confiante. Mas nenhuma simpatia substitui conversa, atenção e reciprocidade: o amor de verdade acontece quando os dois querem.',
+  },
+  {
+    pergunta: 'Qual é a simpatia mais rápida e fácil?',
+    resposta: 'A simpatia do perfume e a simpatia do açúcar levam de 2 a 3 minutos e usam coisas que você já tem em casa: papel, caneta, seu perfume ou o pote de açúcar da cozinha.',
+  },
+  {
+    pergunta: 'Posso fazer mais de uma simpatia ao mesmo tempo?',
+    resposta: 'Quem pratica costuma recomendar fazer uma simpatia por vez e esperar alguns dias antes da próxima, para manter o foco no pedido. Se quiser combinar, escolha simpatias com a mesma intenção.',
+  },
+  {
+    pergunta: 'Qual o melhor dia ou fase da lua para simpatia de amor?',
+    resposta: 'Pela tradição, a lua crescente é a melhor fase para fazer o amor crescer, e a sexta-feira, dia de Vênus, é o dia preferido. Datas especiais como 13 de junho (Santo Antônio) e a noite de 23 para 24 de junho (São João) também são muito usadas.',
+  },
+  {
+    pergunta: 'O que fazer com os restos da simpatia?',
+    resposta: 'Restos naturais, como flores, pétalas, maçã e água, podem ser devolvidos à terra, em um jardim ou vaso. Papéis, velas e embalagens vão para o lixo comum. Evite jogar qualquer coisa em rios ou no mar, a não ser flores em oferendas.',
+  },
+  {
+    pergunta: 'Simpatia de amor é a mesma coisa que amarração?',
+    resposta: 'Não. As simpatias desta página são pedidos carinhosos, que não tentam controlar a vontade de ninguém. Amarração é outra coisa: promete prender uma pessoa contra a vontade dela, e por isso não tem espaço aqui. Amor bom é escolha dos dois.',
+  },
+]

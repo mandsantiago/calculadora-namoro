@@ -11,6 +11,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import path from 'node:path'
+import { faqsHome, faqsBodas, faqsIdeias, faqsSimpatias } from '../src/data/faqs.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const distDir = path.join(__dirname, '..', 'dist')
@@ -30,25 +31,11 @@ const faqPageJsonLd = (faqs) => ({
   })),
 })
 
-// Mesmos textos usados nos componentes <Seo> de cada página (src/pages/*.jsx)
-// e nas listas de FAQ (src/data/faqs.js) — mantidos em sincronia manualmente,
-// já que não há acesso direto aos módulos React aqui.
-const faqsHome = [
-  { pergunta: 'Como calcular os dias de namoro?', resposta: 'Para calcular os dias de namoro, basta subtrair a data de início do relacionamento da data de hoje. Nossa calculadora faz isso automaticamente, mostrando o resultado em anos, meses e dias.' },
-  { pergunta: 'Devo contar desde o primeiro beijo ou desde o pedido oficial?', resposta: 'Depende de vocês! Muitos casais contam a partir do primeiro beijo, outros do pedido oficial. O importante é que os dois concordem com a data.' },
-  { pergunta: 'Quantos meses tem meu namoro?', resposta: 'Multiplique os anos completos por 12 e some os meses restantes. Nossa calculadora já entrega esse número pronto.' },
-  { pergunta: 'Existe diferença entre aniversário de namoro e de casamento?', resposta: 'Sim! O de namoro conta a partir do início do relacionamento, o de casamento a partir da cerimônia oficial.' },
-  { pergunta: 'Como saber quantos dias faltam para o próximo aniversário?', resposta: 'Insira a data do próximo aniversário na calculadora e descubra o countdown exato.' },
-  { pergunta: 'Posso usar a calculadora para relacionamentos do passado?', resposta: 'Sim! Funciona para qualquer período — passado, presente ou futuro.' },
-  { pergunta: 'Relacionamentos à distância também podem usar a calculadora?', resposta: 'Com certeza! Funciona igual para casais em relacionamento à distância.' },
-]
-const faqsBodas = [
-  { pergunta: 'O que são bodas de casamento?', resposta: 'São os nomes tradicionais dados a cada aniversário de matrimônio, cada um representado por um material simbólico.' },
-]
-const faqsIdeias = [
-  { pergunta: 'Como celebrar o aniversário de namoro de forma especial?', resposta: 'Existem mil formas: jantar especial, viagem surpresa, álbum de fotos personalizado — o importante é a intenção.' },
-  { pergunta: 'O que dar de presente no aniversário de 1 ano de namoro?', resposta: 'Álbum de fotos, viagem curta, joia com a data gravada ou uma caixa surpresa com 12 memórias do ano.' },
-]
+// Os FAQs vêm direto de src/data/faqs.js (o mesmo arquivo que as páginas
+// usam), para que o JSON-LD do HTML puro seja idêntico ao texto exibido —
+// antes eram cópias manuais, que já estavam diferentes das respostas reais.
+// Títulos e descriptions continuam duplicados aqui: precisam bater com o
+// <Seo> de cada página em src/pages/*.jsx.
 
 const pages = [
   {
@@ -74,6 +61,12 @@ const pages = [
     title: 'Dia dos Namorados no Brasil e no Mundo: Datas e Origens | Calculadora de Namoro',
     description: "Saiba por que o Dia dos Namorados é comemorado em 12 de junho no Brasil, como o Valentine's Day é celebrado em outros países, e a origem histórica dessas datas do amor.",
     faqs: [],
+  },
+  {
+    route: 'simpatias-para-ele-se-apaixonar',
+    title: 'Simpatia para Ele se Apaixonar por Mim: 15 Rápidas e Fáceis',
+    description: '15 simpatias rápidas e fáceis para ele se apaixonar por você, com origem de cada uma: Santo Antônio, ciganas, italianas, mexicanas e mais. Passo a passo simples.',
+    faqs: faqsSimpatias,
   },
   {
     route: 'politica-de-privacidade',

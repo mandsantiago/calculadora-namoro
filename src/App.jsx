@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx'
 import BodasDeCasamento from './pages/BodasDeCasamento.jsx'
 import IdeiasPresenteNamoro from './pages/IdeiasPresenteNamoro.jsx'
 import DiaDosNamorados from './pages/DiaDosNamorados.jsx'
+import SimpatiasApaixonar from './pages/SimpatiasApaixonar.jsx'
 import PoliticaPrivacidadePage from './pages/PoliticaPrivacidadePage.jsx'
 import './App.css'
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/bodas-de-casamento" element={<BodasDeCasamento />} />
           <Route path="/ideias-presente-namoro" element={<IdeiasPresenteNamoro />} />
           <Route path="/dia-dos-namorados" element={<DiaDosNamorados />} />
+          <Route path="/simpatias-para-ele-se-apaixonar" element={<SimpatiasApaixonar />} />
           <Route path="/politica-de-privacidade" element={<PoliticaPrivacidadePage />} />
         </Routes>
       </main>

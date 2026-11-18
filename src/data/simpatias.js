@@ -1,0 +1,316 @@
+// Conteúdo da página /simpatias-para-ele-se-apaixonar.
+// Origens checadas em 18/11/2026 (ver spec no projeto "Data de namoro").
+// Simpatias são tradição e crença popular — o texto nunca promete resultado.
+
+export const introducao = [
+  'Simpatia é um pequeno ritual caseiro, feito com fé e intenção, para pedir ajuda em algum desejo — e o amor sempre foi o pedido campeão. O costume mistura catolicismo popular, tradições indígenas e africanas, crenças trazidas por imigrantes e muita sabedoria de avó. Não é à toa que quase toda família brasileira tem uma simpatia de Santo Antônio guardada na memória.',
+  'Reunimos aqui 15 simpatias para ele se apaixonar por você, das mais rápidas e fáceis às mais tradicionais, com a origem de cada uma: do Brasil, do México, da Itália, da Irlanda e da lenda chinesa do fio vermelho. Encare como curiosidade cultural e como um jeito carinhoso de colocar sua intenção no mundo: simpatia é crença, não tem comprovação e não substitui conversa, respeito e reciprocidade. Nenhuma delas tira a liberdade de escolha da outra pessoa — e é assim que deve ser.',
+]
+
+export const categorias = [
+  {
+    id: 'rapidas',
+    titulo: 'As mais rápidas (menos de 5 minutos)',
+    descricao: 'Para quem quer algo simples, com o que já tem em casa.',
+  },
+  {
+    id: 'apaixonar',
+    titulo: 'Para ele se apaixonar por você',
+    descricao: 'Simpatias um pouco mais caprichadas, muitas ligadas a santos e tradições antigas.',
+  },
+  {
+    id: 'procurar',
+    titulo: 'Para ele te procurar',
+    descricao: 'Para quando o contato esfriou e você quer que ele lembre de você.',
+  },
+  {
+    id: 'fortalecer',
+    titulo: 'Para fortalecer um namoro que já começou',
+    descricao: 'Para quem já está junto e quer cuidar do que está nascendo.',
+  },
+]
+
+export const simpatias = [
+  // ───────────── Rápidas ─────────────
+  {
+    id: 'perfume',
+    categoria: 'rapidas',
+    nome: 'Simpatia do perfume',
+    bandeira: '🇧🇷',
+    origem: 'Simpatia popular brasileira',
+    tempo: '2 minutos',
+    ingredientes: ['1 pedaço de papel branco', '1 caneta', 'O perfume que você mais usa'],
+    passos: [
+      'Escreva o nome completo dele no papel.',
+      'Borrife seu perfume três vezes sobre o nome, mentalizando o momento em que ele sente seu cheiro e lembra de você.',
+      'Dobre o papel em quatro, sempre em sua direção, e guarde entre as suas roupas.',
+      'Continue usando o mesmo perfume quando for encontrá-lo.',
+    ],
+    contexto: 'Cheiro e memória andam juntos, e a crença popular usa isso: o perfume vira a "assinatura" que ele vai associar a você.',
+    link: {
+      texto: 'Ainda não tem um perfume que seja a sua cara? Descubra o seu no Meu Perfume Ideal.',
+      url: 'https://meuperfumeideal.com.br/',
+      externo: true,
+    },
+  },
+  {
+    id: 'acucar',
+    categoria: 'rapidas',
+    nome: 'Simpatia do açúcar',
+    bandeira: '🇧🇷',
+    origem: 'Simpatia popular brasileira',
+    tempo: '3 minutos',
+    ingredientes: ['1 pedaço de papel', '1 caneta', '1 pote de açúcar (pode ser o da cozinha)'],
+    passos: [
+      'Escreva o nome dele e, embaixo, o seu.',
+      'Dobre o papel e enterre no pote de açúcar.',
+      'Ao fechar o pote, diga: "Assim como este açúcar é doce, que o seu coração se adoce para mim".',
+      'Deixe o papel ali por sete dias e depois descarte no lixo.',
+    ],
+    contexto: 'Uma das simpatias mais conhecidas do Brasil, baseada na ideia de "adoçar" o coração da pessoa amada.',
+  },
+  {
+    id: 'caneta-vermelha',
+    categoria: 'rapidas',
+    nome: 'Simpatia dos nomes entrelaçados',
+    bandeira: '🇧🇷',
+    origem: 'Simpatia popular brasileira',
+    tempo: '3 minutos',
+    ingredientes: ['1 folha de papel branco', '1 caneta vermelha nova'],
+    passos: [
+      'Escreva o nome dele com a caneta vermelha.',
+      'Escreva o seu nome por cima, cruzando as letras com as dele.',
+      'Desenhe um coração em volta dos dois nomes, sem tirar a caneta do papel.',
+      'Guarde o papel dentro de um livro de que você goste.',
+    ],
+    contexto: 'O vermelho é a cor da paixão em muitas culturas, e o traço contínuo representa uma história sem interrupções.',
+  },
+  {
+    id: 'fio-vermelho',
+    categoria: 'rapidas',
+    nome: 'Simpatia do fio vermelho',
+    bandeira: '🇨🇳🇯🇵',
+    origem: 'Inspirada na lenda chinesa do fio vermelho do destino',
+    tempo: '5 minutos',
+    ingredientes: ['1 fio ou linha vermelha de uns 20 cm'],
+    passos: [
+      'Segure o fio e pense nele com carinho, lembrando de um momento bom que viveram.',
+      'Amarre uma ponta no seu dedo mindinho por alguns minutos enquanto faz seu pedido.',
+      'Dê um nó no meio do fio, simbolizando o encontro dos dois.',
+      'Guarde o fio com o nó em uma caixinha ou na sua carteira.',
+    ],
+    contexto: 'Na China, conta-se que Yue Lao, o "velho da lua", une casais predestinados com um fio vermelho invisível. No Japão, a mesma ideia virou o akai ito, quase sempre amarrado no dedo mindinho. Fazer a simpatia com um fio de verdade é uma adaptação moderna e romântica dessa lenda.',
+  },
+
+  // ───────────── Para ele se apaixonar ─────────────
+  {
+    id: 'santo-antonio',
+    categoria: 'apaixonar',
+    nome: 'Pedido a Santo Antônio',
+    bandeira: '🇧🇷🇵🇹',
+    origem: 'Catolicismo popular luso-brasileiro',
+    tempo: '10 minutos',
+    ingredientes: ['1 imagem pequena de Santo Antônio', '1 vela branca', '1 papel com o seu pedido'],
+    passos: [
+      'Escreva no papel o que você deseja para a sua vida amorosa, com o nome dele se quiser.',
+      'Acenda a vela ao lado da imagem e faça uma oração ou um pedido com suas palavras.',
+      'Deixe o papel embaixo da imagem até a vela terminar de queimar, em lugar seguro.',
+      'Quando o pedido se realizar, agradeça ao santo (muita gente faz uma doação ou acende outra vela).',
+    ],
+    contexto: 'Santo Antônio é o "santo casamenteiro" de Portugal e do Brasil, festejado em 13 de junho, véspera do nosso Dia dos Namorados.',
+    link: {
+      texto: 'Entenda por que o Dia dos Namorados no Brasil é em 12 de junho, na véspera de Santo Antônio.',
+      url: '/dia-dos-namorados',
+      externo: false,
+    },
+  },
+  {
+    id: 'san-antonio-cabeca',
+    categoria: 'apaixonar',
+    nome: 'San Antonio de cabeça para baixo',
+    bandeira: '🇲🇽',
+    origem: 'Tradição popular mexicana',
+    tempo: '10 minutos',
+    ingredientes: ['1 imagem de Santo Antônio', '13 moedas recebidas de presente de pessoas próximas', '1 vela'],
+    passos: [
+      'Peça a 13 amigos ou familiares que te deem uma moeda cada.',
+      'Ofereça as 13 moedas ao santo, colocando-as aos pés da imagem.',
+      'Vire a imagem de cabeça para baixo e faça seu pedido de amor.',
+      'Pela tradição, ele só volta para a posição normal quando o pedido for atendido.',
+    ],
+    contexto: 'No México, especialmente no dia 13 de junho, é muito comum "pôr San Antonio de cabeza" para pedir um namorado. Vale saber que a Igreja Católica vê o costume como superstição, mas ele segue vivo como tradição popular.',
+  },
+  {
+    id: 'maca-cigana',
+    categoria: 'apaixonar',
+    nome: 'Simpatia da maçã com mel e canela',
+    bandeira: '🌹',
+    origem: 'Atribuída à tradição cigana',
+    tempo: '15 minutos',
+    ingredientes: ['1 maçã vermelha', '1 pedaço de papel', '1 colher de mel', 'Canela em pó', '1 pires'],
+    passos: [
+      'Corte uma "tampa" na parte de cima da maçã e faça um pequeno buraco no centro.',
+      'Escreva o nome dele e o seu no papel, enrole e coloque dentro do buraco.',
+      'Regue com mel, polvilhe canela e feche com a tampa.',
+      'Deixe a maçã no pires por três dias em um lugar alto da casa e depois devolva à natureza, enterrando em um jardim ou vaso.',
+    ],
+    contexto: 'A maçã é símbolo de amor e tentação desde a Antiguidade, e o mel e a canela aparecem em muitas simpatias atribuídas à tradição cigana para "adoçar" e "aquecer" a relação.',
+  },
+  {
+    id: 'quartzo-rosa',
+    categoria: 'apaixonar',
+    nome: 'Quartzo rosa debaixo do travesseiro',
+    bandeira: '💎',
+    origem: 'Tradição esotérica dos cristais',
+    tempo: '5 minutos (mais as noites de uso)',
+    ingredientes: ['1 pedra de quartzo rosa', 'Água corrente'],
+    passos: [
+      'Lave o quartzo em água corrente para "limpá-lo".',
+      'Segure a pedra entre as mãos e mentalize o tipo de amor que você quer viver.',
+      'Coloque a pedra debaixo do travesseiro e durma com ela por sete noites.',
+      'Depois, deixe o quartzo no seu quarto ou carregue na bolsa.',
+    ],
+    contexto: 'No esoterismo, o quartzo rosa é a "pedra do amor", ligada ao carinho e ao amor-próprio. Ótima para quem acredita que atrair alguém começa por se sentir bem consigo mesma.',
+  },
+  {
+    id: 'banho-rosas',
+    categoria: 'apaixonar',
+    nome: 'Banho de pétalas de rosa',
+    bandeira: '🇧🇷',
+    origem: 'Simpatia popular brasileira',
+    tempo: '20 minutos',
+    ingredientes: ['Pétalas de 3 rosas vermelhas', '2 litros de água', '1 colher de açúcar ou mel'],
+    passos: [
+      'Ferva a água, desligue o fogo e acrescente as pétalas e o açúcar.',
+      'Tampe e deixe amornar por cerca de 15 minutos.',
+      'Depois do seu banho normal, jogue a mistura do pescoço para baixo, mentalizando o seu pedido.',
+      'Não se enxágue; deixe secar naturalmente e descarte as pétalas em um jardim.',
+    ],
+    contexto: 'Os banhos de ervas e flores são uma tradição forte no Brasil, que mistura heranças indígenas, africanas e europeias. As rosas vermelhas são as preferidas para assuntos do coração.',
+    link: {
+      texto: 'Quer mais receitas de banho de flores e de atração? Veja no Rituais de Banho.',
+      url: 'https://rituaisdebanho.com.br/',
+      externo: true,
+    },
+  },
+
+  // ───────────── Para ele te procurar ─────────────
+  {
+    id: 'copo-agua',
+    categoria: 'procurar',
+    nome: 'Simpatia do copo d\'água',
+    bandeira: '🇧🇷',
+    origem: 'Simpatia popular brasileira',
+    tempo: '3 minutos (mais uma noite)',
+    ingredientes: ['1 copo de vidro transparente', 'Água', '1 papel com o nome dele'],
+    passos: [
+      'Escreva o nome dele no papel e coloque embaixo do copo.',
+      'Encha o copo de água e diga: "Assim como esta água te chama, que você sinta vontade de falar comigo".',
+      'Deixe o copo ao lado da cama durante a noite.',
+      'De manhã, jogue a água em uma planta e guarde o papel.',
+    ],
+    contexto: 'A água aparece em muitas simpatias brasileiras como um "canal" de comunicação. Esta é uma das mais buscadas por quem espera aquela mensagem.',
+  },
+  {
+    id: 'vela-mel',
+    categoria: 'procurar',
+    nome: 'Simpatia da vela vermelha com mel',
+    bandeira: '🇧🇷',
+    origem: 'Simpatia popular brasileira',
+    tempo: '10 minutos (mais o tempo da vela)',
+    ingredientes: ['1 vela vermelha pequena', '1 pires', 'Mel', '1 papel com o nome dele'],
+    passos: [
+      'Escreva o nome dele no papel e coloque no centro do pires.',
+      'Despeje um fio de mel sobre o nome.',
+      'Acenda a vela sobre o papel e peça que ele se lembre de você e te procure.',
+      'Deixe a vela queimar até o fim, sempre em lugar seguro e longe de cortinas, e descarte os restos no lixo.',
+    ],
+    contexto: 'Vela, mel e o nome escrito formam um trio clássico das simpatias de amor: a luz do pedido, a doçura e a pessoa.',
+  },
+  {
+    id: 'casca-maca',
+    categoria: 'procurar',
+    nome: 'Casca de maçã por cima do ombro',
+    bandeira: '🇮🇪',
+    origem: 'Folclore irlandês e escocês de Halloween',
+    tempo: '5 minutos',
+    ingredientes: ['1 maçã', '1 faca pequena'],
+    passos: [
+      'Descasque a maçã com cuidado, tentando tirar a casca inteira, sem quebrar.',
+      'Gire a casca três vezes sobre a cabeça.',
+      'Jogue-a por cima do ombro esquerdo.',
+      'Veja que letra a casca forma no chão: pela tradição, é a inicial do seu futuro amor.',
+    ],
+    contexto: 'Esta é, na origem, uma brincadeira de adivinhação: moças da Irlanda e da Escócia a faziam na noite de Halloween para descobrir a inicial do futuro marido. Não faz ninguém se apaixonar, mas é uma das tradições de amor mais antigas e divertidas da lista.',
+  },
+
+  // ───────────── Fortalecer ─────────────
+  {
+    id: 'fitinha-bonfim',
+    categoria: 'fortalecer',
+    nome: 'Fitinha do Senhor do Bonfim',
+    bandeira: '🇧🇷',
+    origem: 'Tradição baiana do Senhor do Bonfim',
+    tempo: '2 minutos',
+    ingredientes: ['1 fitinha do Senhor do Bonfim'],
+    passos: [
+      'Peça para alguém amarrar a fitinha no seu pulso esquerdo, com duas voltas.',
+      'A cada um dos três nós, faça um pedido em silêncio; dedique um deles ao seu relacionamento.',
+      'Não tire a fitinha: pela tradição, os pedidos se realizam quando ela arrebentar sozinha.',
+    ],
+    contexto: 'A fitinha nasceu em Salvador como "medida do Bonfim" e virou símbolo da Bahia. É usada para todo tipo de pedido, e no candomblé o Senhor do Bonfim é associado a Oxalá. Ganhar a fitinha do seu amor deixa a simpatia ainda mais especial.',
+    link: {
+      texto: 'Procurando outras ideias para celebrar o namoro? Veja as ideias de presente e comemoração por marco.',
+      url: '/ideias-presente-namoro',
+      externo: false,
+    },
+  },
+  {
+    id: 'iemanja',
+    categoria: 'fortalecer',
+    nome: 'Oferenda de flores a Iemanjá',
+    bandeira: '🇧🇷',
+    origem: 'Umbanda e candomblé',
+    tempo: '15 minutos',
+    ingredientes: ['Flores brancas (rosas ou palmas)', 'Perfume de alfazema'],
+    passos: [
+      'Vista roupas claras e vá até o mar, de preferência em 2 de fevereiro (na Bahia) ou na virada do ano (no Rio de Janeiro).',
+      'Peça licença ao mar, borrife alfazema nas flores e faça seu pedido para o amor e a harmonia do casal.',
+      'Entregue as flores às ondas com delicadeza.',
+      'Leve apenas elementos naturais: nada de espelhos, plástico ou embalagens no mar.',
+    ],
+    contexto: 'Iemanjá, a Rainha do Mar, é uma das orixás mais amadas das religiões afro-brasileiras, e pedidos de amor estão entre os mais tradicionais feitos a ela. Mais do que uma simpatia, é um gesto de fé: faça com respeito à tradição e à natureza.',
+  },
+  {
+    id: 'acqua-san-giovanni',
+    categoria: 'fortalecer',
+    nome: 'Acqua di San Giovanni',
+    bandeira: '🇮🇹',
+    origem: 'Tradição popular italiana',
+    tempo: '15 minutos (mais uma noite)',
+    ingredientes: ['1 bacia com água', 'Flores e ervas variadas (rosas, lavanda, alecrim, camomila)'],
+    passos: [
+      'Na noite de 23 de junho, coloque as flores e ervas na bacia com água.',
+      'Deixe a bacia ao ar livre ou na janela durante toda a noite, para pegar o sereno.',
+      'Na manhã de 24 de junho, lave o rosto e as mãos com essa água, mentalizando amor e sorte para o casal.',
+      'Se sobrar água, não guarde: a tradição manda presentear amigos com ela.',
+    ],
+    contexto: 'Na Itália, a noite de San Giovanni (São João) é considerada mágica, e a água de flores preparada ao sereno promete trazer amor, saúde e sorte. Dá para fazer junto com o seu amor.',
+    link: {
+      texto: 'Junho é mesmo o mês do amor: veja as datas e origens do Dia dos Namorados no mundo.',
+      url: '/dia-dos-namorados',
+      externo: false,
+    },
+  },
+]
+
+export const dicas = {
+  titulo: 'Dicas para fazer simpatias',
+  itens: [
+    { titulo: 'Intenção em primeiro lugar', texto: 'Para quem acredita, o mais importante é a intenção. Faça com calma, sem pressa e pensando no amor que quer viver, não só na pessoa.' },
+    { titulo: 'A lua certa', texto: 'Pela tradição, a lua crescente é a fase de fazer o amor crescer e a lua cheia é a de intensificar. Muitas pessoas evitam a minguante para pedidos de amor.' },
+    { titulo: 'O dia da semana', texto: 'A sexta-feira é o dia ligado a Vênus, planeta do amor, e é a preferida para simpatias românticas. O dia 13 de junho, de Santo Antônio, é o grande dia do ano.' },
+    { titulo: 'Uma de cada vez', texto: 'Quem pratica costuma recomendar fazer uma simpatia por vez e esperar alguns dias, para não "misturar" os pedidos.' },
+    { titulo: 'Segurança e natureza', texto: 'Nunca deixe velas acesas sem ninguém por perto e prefira descartar restos naturais na terra e o resto no lixo, nunca em rios e no mar.' },
+  ],
+}

@@ -69,6 +69,13 @@ const IdeiasPresenteNamoro = () => (
               </div>
             ))}
           </div>
+          <p className="text-gray-500 text-sm mt-8">
+            Ainda na fase da conquista? Veja nossas{' '}
+            <Link to="/simpatias-para-ele-se-apaixonar" className="text-purple-600 underline hover:text-pink-500 font-semibold">
+              simpatias para ele se apaixonar
+            </Link>
+            , com tradições do Brasil e do mundo.
+          </p>
         </div>
       </section>
 
